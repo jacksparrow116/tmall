@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+#header{
+	height: 198px;
+	/* background-color: #fc0; */
+}
+
+/***** header-nav start *****/
+#header .header-nav{
+	height: 32px;
+	min-width: 1230px;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #e5e5e5;
+	background-color: #f2f2f2;
+	color: #999;
+	z-index: 3;
+}
+#header .header-nav-content{
+	width: 1230px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 32px;
+}
+#header .header-nav-left>em{
+	font-style: normal;
+}
+#header .header-nav-left>a{
+	padding-left: 16px;
+}
+#header .header-nav-left>a:hover{
+	color: #ff0036;
+}
+
+/***** header-nav-right start *****/
+#header .header-nav-right div{
+	margin-left: 9px;
+}
+#header .header-nav-right .mytaobao{
+	width: 72px;
+}
+#header .header-nav-right .mytaobao>a{
+	padding-left: 10px;
+}
+#header .header-nav-right .mytaobao ul{
+	width: 74px;
+	height: 36px;
+	margin-top: 1px;
+	padding: 10px;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #eee;
+	background-color: #fff;
+	color: #666;
+	line-height: 19px;
+}
+
+/***** on下拉列表 start*****/
+#header .header-nav-right .on{
+	border: 1px solid transparent;
+	border-top: none;
+	border-bottom: none;
+}
+#header .header-nav-right .on:hover{
+	border-color: #eee;
+	background-color: #fff;
+}
+#header .header-nav-right .on>a{
+	display: block;
+	line-height: 32px;
+}
+#header .header-nav-right .on:hover>a{
+	color: #ff0036;
+}
+#header .header-nav-right .on>a:hover{
+	text-decoration: underline;
+}
+#header .header-nav-right .on>a:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom:0;
+	right: 5px;
+	width: 0;
+	height: 0;
+	margin: auto;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #bbb transparent;
+	border-bottom: none;
+	transition: .3s;
+}
+#header .header-nav-right .on:hover>a:after{
+	transform: rotate(180deg);
+}
+#header .header-nav-right .on li a:hover{
+	color: #ff0036;
+	text-decoration: underline;
+}
+#header .header-nav-right .on ul{
+	display: none;
+	background-color: #fff;
+	color: #666;
+}
+#header .header-nav-right .on:hover ul{
+	display: block;
+}
+/***** 下拉列表 end*****/
+
+/***** 购物车 start *****/
+#header .header-nav-right .cart{
+	width: 77px;
+}
+#header .header-nav-right .iconfont{
+	font-size: 12px;
+	color: #ff0036;
+}
+#header .header-nav-right .cart>a span{
+	padding: 0 2px;
+	color: #666;
+	font-weight: bold;
+}
+#header .header-nav-right .cart>a:hover,#header .header-nav-right .cart>a:hover span{
+	color: #ff0036;
+}
+/***** 购物车 end *****/
+
+/***** 收藏夹 start *****/
+#header .header-nav-right .favorite{
+	width: 60px;
+}
+#header .header-nav-right .favorite>a{
+	padding-left: 9px;
+}
+#header .header-nav-right .favorite ul{
+	width: 62px;
+	height: 36px;
+	margin-top: 1px;
+	padding: 10px;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #eee;
+	line-height: 19px;
+}
+/***** 收藏夹 end *****/
+
+/***** 手机版 start *****/
+#header .header-nav-right .phone{
+	width: 65px;
+}
+#header .header-nav-right .phone>a:hover{
+	color: #ff0036;
+}
+#header .header-nav-right .phone>a:after{
+	content: '';
+	display: none;
+	position: absolute;
+	top: 22px;
+	left: 42px;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-top: none;
+	border-color: #fff transparent;
+	z-index: 1;
+}
+#header .header-nav-right .phone>img{
+	display: none;
+	top: 27px;
+	left: -42px;
+	box-shadow: 0 0 5px 0;
+}
+#header .header-nav-right .phone:hover>a:after,#header .header-nav-right .phone:hover>img{
+	display: block;
+}
+#header .header-nav-right .phone>i{
+	display: inline-block;
+	padding-left: 12px;
+	border-left: 1px solid #ccc;
+	line-height: 14px;
+}
+/***** 手机版 end *****/
+
+#header .header-nav-right .taobao{
+	width:38px;
+	margin-left: 20px;
+}
+#header .header-nav-right .taobao:hover>a{
+	color: #ff0036;
+}
+
+/***** 商家支持 start *****/
+#header .header-nav-right .business{
+	width: 72px;
+	height: 33px;
+}
+#header .header-nav-right .business>a{
+	padding-left: 9px;
+}
+#header .header-nav-right .business>.hide{
+	display: none;
+	right: -1px;
+	width: 122px;
+	height: 175px;
+	margin-top: 1px;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	border-top: none;
+	background-color: #fff;
+}
+#header .header-nav-right .business:hover>.hide{
+	display: block;
+}
+#header .header-nav-right .business h4{
+	padding-top: 9px;
+	line-height: 13px;
+	color: #666;
+}
+#header .header-nav-right .business ul{
+	display: block;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #827777;
+	line-height: 23px;
+}
+#header .header-nav-right .business li{
+	display: inline-block;
+}
+#header .header-nav-right .business li:nth-child(odd){
+	padding-right: 22px;
+}
+/***** 商家支持 end *****/
+
+/***** 网站导航 start *****/
+#header .header-nav-right .navigation{
+	width: 88px;
+	height: 33px;
+	margin-left: 2px;
+}
+#header .header-nav-right .navigation>a{
+	padding-left: 10px;
+}
+#header .header-nav-right .navigation>a>i{
+	padding-right: 3px;
+}
+#header .header-nav-right .navigation:hover>a{
+	color: #999;
+	text-decoration: none;
+}
+#header .header-nav-right .navigation>.hide{
+	display: none;
+	right: -1px;
+	width: 1198px;
+	height: 145px;
+	padding-top: 15px;
+	border: 1px solid #eee;
+	border-top: none;
+	background-color: #fff;
+}
+#header .header-nav-right .navigation:hover>.hide{
+	display: block;
+}
+#header .header-nav-right .navigation .hot{
+	width: 456px;
+	border-right: 1px solid #ccc;
+}
+#header .header-nav-right .navigation h4{
+	font-size: 16px;
+	font-weight: normal;
+}
+#header .header-nav-right .navigation .hot>h4{
+	color: #f56a00;
+}
+#header .header-nav-right .navigation ul{
+	line-height: 31px;
+}
+#header .header-nav-right .navigation li{
+	display: inline-block;
+	width: 88px;
+}
+#header .navigation>.hide div{
+	padding-left: 30px;
+	margin-left: 0;
+}
+#header .header-nav-right .navigation .market{
+	width: 456px;
+	border-right: 1px solid #ccc;
+}
+#header .header-nav-right .navigation .market>h4{
+	color: #7ca3e6;
+}
+#header .navigation .market li>a:hover{
+	color: #2263d4;
+}
+#header .header-nav-right .navigation .help{
+	width: 194px;
+}
+#header .header-nav-right .navigation .help>h4{
+	color: #666;
+}
+#header .navigation .help li>a:hover{
+	color: #666;
+}
+#header .navigation>.hide h4>span{
+	padding-left: 6px;
+}
+/***** 网站导航 end *****/
+/***** header-nav-right end *****/
+/***** header-nav end *****/
+
+/***** header-container start *****/
+#header .header-container .header-content{
+	width: 1230px;
+	height: 130px;
+	margin: 0 auto;
+	/* background-color: #f6f; */
+}
+#header .header-container .header-content h1{
+	margin-left: -45px;
+}
+#header .header-container .header-content h1>a{
+	display: block;
+	width: 290px;
+	height: 130px;
+	background-image: url('../images/logo.gif');
+}
+#header .header-content .header-search{
+	top: 38px;
+	left: 316px;
+	width: 630px;
+	height: 72px;
+	/* background-color: #9ff; */
+}
+#header .header-search form{
+	font-size: 0;
+}
+#header .header-search input[type=text]{
+	width: 491px;
+	height: 34px;
+	border: 2px solid #ff0036;
+	vertical-align: bottom;
+	font-size: 15px;
+	text-indent: 7px;
+}
+#header .header-search input[type=text]:focus::-webkit-input-placeholder{
+	color: #ccc;
+}
+#header .header-search input[type=submit]{
+	width: 130px;
+	height: 40px;
+	background-color: #ff0036;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 5px;
+	cursor: pointer;
+}
+#header .header-search ul{
+	margin-top: 8px;
+	font-weight: 300;
+}
+#header .header-search li{
+	padding: 0 11px;
+	border-left: 1px solid #ccc;
+	font-size: 15px;
+	line-height: 16px;
+	color: #999;
+}
+#header .header-search li:first-child{
+	padding-left: 0;
+	border-left: none;
+}
+#header .header-search ul>.chg{
+	color: #ff0036;
+}
+/***** header-container end *****/
